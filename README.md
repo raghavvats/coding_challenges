@@ -1,2 +1,2 @@
-# codingchallenges
+# Coding Challenges
 https://codingchallenges.fyi/
