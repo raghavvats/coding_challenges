@@ -3,26 +3,31 @@ import operator
 import re
 
 def is_operator(char):
+    '''Check if given char is a supported operator'''
     if char in supported_operations.keys():
         return True
     return False
 
 def tokenize(expression):
-    tokenized_exp = re.findall(r"(\b\d*\.?\d+\b|[\(\)\+\*\-\/])", expression)
-    return tokenized_exp
+    '''
+    Tokenize a given expression, returning string with seperated tokens
     
-    tokenized_exp = []
-    while len(expression) > 0:
-        if expression[0].isdigit():
-            temp = []
-            while expression[0].isdigit():
-                temp.append(expression.pop(0))
-            tokenized_exp += temp
-        elif is_operator(expression[0]):
-            tokenize += expression[0]
+    Supported tokens:
+        Basic operators: + - * /
+        Parentheses: ( )
+        Numbers: 1 2 3 4 5 6 7 8 9
+
+    Unsupported Tokens:
+        Functions: ex. sin() cos() tan()
+        Decimals: ex. 1.2
+        Multiple Expressions: ex. '1 + 2, 3 * 4'
+        Other operators: ex. //
+    '''
+    tokenized_exp = re.findall(r"(\b\d*\.?\d+\b|[\(\)\+\*\-\/])", expression)
     return tokenized_exp
 
 def shunting_yard(expression):
+    '''Convert human readable input into reverse rolish notation via the shunting yard algorithm'''
     operators = []
     RPN_expression = []
     
@@ -47,9 +52,9 @@ def shunting_yard(expression):
     return RPN_expression
 
 def evaluate_RPN(expression):
+    '''Evalute an expression in reverse polish notation'''
     output = []
     while expression:
-        print(output, expression)
         if is_operator(expression[0]):
             second = output.pop()
             first = output.pop()
@@ -59,15 +64,14 @@ def evaluate_RPN(expression):
             output.append(expression.pop(0))
     return output
 
-
 supported_operations = {
-    "+": sum,
+    "+": operator.add,
     "-": operator.sub,
     "*": operator.mul,
-    "/": operator.truediv,
-    "//": operator.floordiv
+    "/": operator.truediv
 }
 
+# determines order of operations
 precedence = {
     "*": 1,
     "/": 1,
@@ -81,6 +85,4 @@ if len(sys.argv) != 2:
     sys.exit(1)
 expression = sys.argv[1]
 
-print(evaluate_RPN(shunting_yard(tokenize(expression))))
-
-
+print(evaluate_RPN(shunting_yard(tokenize(expression)))[0])
