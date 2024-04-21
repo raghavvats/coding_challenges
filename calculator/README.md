@@ -1,7 +1,7 @@
 # **Basic Calculator Project**
 ## Usage
 Input your expression in single quotes, making sure it only includes supported operators and proper order of operations
-For example:
+  For example:
   calculator.py '1 + 2'
   calculator.py '63 * 24 - 34'
 
