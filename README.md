@@ -2,7 +2,7 @@
 Expanding my SWE skills with https://codingchallenges.fyi/
 
 
-** TODO:
+**TODO:**  
 https://codingchallenges.fyi/challenges/challenge-json-parser
 https://codingchallenges.fyi/challenges/challenge-head
 https://codingchallenges.fyi/challenges/challenge-rate-limiter
