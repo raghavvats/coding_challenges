@@ -10,7 +10,7 @@ Tokens are how the expression is parsed and seperated to be interpreted mathemat
 **Supported tokens:**  
     Basic operators: + - * /  
     Parentheses: ( )  
-    Numbers: 1 2 3 4 5 6 7 8 9    
+    Numbers: 1 2 3 4 5 6 7 8 9      
 **Unsupported Tokens:**  
     Functions: ex. sin() cos() tan()  
     Decimals: ex. 1.2  
