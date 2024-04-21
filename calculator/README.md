@@ -6,7 +6,7 @@ For example:
     calculator.py '63 * 24 - 34'  
 
 ## Support
-Tokens are how the expression is parsed and seperated to be interpreted mathematically. Support for tokens is limited, so expression complexity is also limited.    
+Tokens are how the expression is parsed and seperated to be interpreted mathematically. Support for tokens is limited, so expression complexity is also limited.      
 **Supported tokens:**  
     Basic operators: + - * /  
     Parentheses: ( )  
