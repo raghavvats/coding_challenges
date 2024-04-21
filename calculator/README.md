@@ -8,7 +8,7 @@ For example:
 ## Support
 Tokens are how the expression is parsed and seperated to be interpreted mathematically. Support for tokens is limited, so expression complexity is also limited.      
 **Supported tokens:**  
-    Basic operators: + - * /  
+>Basic operators: + - * /  
     Parentheses: ( )  
     Numbers: 1 2 3 4 5 6 7 8 9      
 **Unsupported Tokens:**  
