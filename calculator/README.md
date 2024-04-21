@@ -1,4 +1,4 @@
-# **Basic Calculator Project**
+[# **Basic Calculator Project**](https://codingchallenges.fyi/challenges/challenge-calculator/)
 ## Usage
 Input your expression in single quotes, making sure it only includes supported operators and proper order of operations.  
 For example:  
