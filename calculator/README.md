@@ -20,3 +20,6 @@ Tokens are how the expression is parsed and separated to be interpreted mathemat
     - Other operators: ex. //    
 
 ## Implementation
+1. Tokenize string using regex, separating any supported tokens (see above) into a list.
+2. Execute the [shunting yard algorithm](https://en.wikipedia.org/wiki/Shunting_yard_algorithm#The_algorithm_in_detail), utilizing a stack to convert the tokenized expression into [reverse polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation).
+3. Evaluate the RPN expression left-to-right, order of operations having been dealt with in the conversion to RPN.
