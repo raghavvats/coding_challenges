@@ -1,11 +1,11 @@
 # **Basic Calculator Project**
-##Usage
+## Usage
 Input your expression in single quotes, making sure it only includes supported operators and proper order of operations
 For example:
   calculator.py '1 + 2'
   calculator.py '63 * 24 - 34'
 
-##Support
+## Support
 Tokens are how the expression is parsed and seperated to be interpreted mathematically. Support for tokens is limited, so expression complexity is also limitedl.
 **Supported tokens:**
   Basic operators: + - * /
