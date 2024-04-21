@@ -1,2 +1,2 @@
 # Coding Challenges
-https://codingchallenges.fyi/
+Expanding my SWE skills with https://codingchallenges.fyi/
